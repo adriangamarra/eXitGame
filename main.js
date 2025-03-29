@@ -12,7 +12,7 @@ userTextBoxElement.addEventListener("keydown", function(event) {
 });
 
 function stepOne(input) {
-    if(["i walk to it" , "i get closer", "walk towards the cave", "walk to it"].includes(input)) {
+    if(["i walk to it" , "i get closer", "walk towards the cave" , "walk to it"].includes(input)) {
         textElement.innerText = "Inside the cave, you see a small figure in the corner. What do you do?";
         currentStep = 2;
     } else if (input === "i walk away") {
@@ -34,7 +34,7 @@ function stepOne(input) {
 }
 
 function stepTwo(input) {
-    if (["i run away" , "run", "leave" , "run away"].includes(input)){
+    if (["i run away" , "run", "leave" , "run away" , "walk away" , "i walk away" , "walk"].includes(input)){
         textElement.innerText = "You run off... and then look back. The cave is gone. What do you do?";
         currentStep = 3;
     } else if (["i approach it", "i look at it"].includes(input)) {
