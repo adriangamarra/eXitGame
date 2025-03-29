@@ -12,7 +12,7 @@ userTextBoxElement.addEventListener("keydown", function(event) {
 });
 
 function stepOne(input) {
-    if(["i walk to it" , "i get closer", "walk towards the cave"].includes(input)) {
+    if(["i walk to it" , "i get closer", "walk towards the cave", "walk to it"].includes(input)) {
         textElement.innerText = "Inside the cave, you see a small figure in the corner. What do you do?";
         currentStep = 2;
     } else if (input === "i walk away") {
